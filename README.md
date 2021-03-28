@@ -1,5 +1,5 @@
 # MybatisLearning
-利用SqlSession 的 selctOne进行简易查询
+利用SqlSession 的 selectOne进行简易查询
 
 1. 根据xml配置文件（全局配置文件）创建一个SqlSessionFactory对象
                 有数据源等一些运行环境信息

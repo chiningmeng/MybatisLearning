@@ -10,7 +10,7 @@
 	2. 使用SqlSession工厂，获取SqlSession对象使用他来增删查改， 一个SqlSession代表和数据库的一次会话，用完要关闭
 	3. 使用sql的唯一标识来告诉mybatis执行哪个sql,sql都保存在sql映射文件中的
                     
-                    
+但用的更多的是接口式编程
 建表脚本如下：
 ~~~mysql
 CREATE TABLE tbl_employee(

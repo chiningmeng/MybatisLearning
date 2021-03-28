@@ -20,7 +20,21 @@
     select id,last_name lastname,email,gender from tbl_employee where id = #{id}
 </select>
 ~~~
-
+1. 接口式编程：
+     + 原来      Dao ===》 DaoImpl
+ 
+     + mybatis:  Mapper  ===》 xxMapper.xml
+2. SqlSession代表和数据库的一次会话：用完必须关闭
+3. SqlSession和connection一样都是非线程安全==》每次使用都因该去获取新的对象
+4. mapper接口没实现类，但mybatis会为这个接口生成一个代理对象
+5. 两个重要的配置文件：
+    + mybatis的全局配置文件：包含数据库连接池信息，事物管理器信息等系统运行环境信息
+    + sql映射文件：保存了每一个sql语句的映射信息
+~~~java
+//将接口和xml进行绑定
+ EmployeeMapper mapper = openSession.getMapper(EmployeeMapper.class);
+~~~
+ 
 好处：
 + 接口规定的方法拥有更强的类型检查
 + 将dao层与实现分离，更灵活

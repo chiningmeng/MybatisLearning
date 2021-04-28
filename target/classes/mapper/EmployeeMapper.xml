@@ -15,7 +15,7 @@
 
         public Employee getEmpById(Integer id);
     -->
-    <select id="getEmpById" resultType="bean.Employee">
-        select id,last_name lastname,email,gender from tbl_employee where id = #{id}
+    <select id="getEmpById" resultType="employee">
+        select * from tbl_employee where id = #{id}
     </select>
 </mapper>

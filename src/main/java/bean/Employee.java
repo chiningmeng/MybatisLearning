@@ -2,13 +2,13 @@ package bean;
 
 public class Employee {
     private Integer id;
-    private String lastname;
+    private String lastName;
     private String email;
     private String gender;
 
-    public Employee(Integer id, String lastname, String email, String gender) {
+    public Employee(Integer id, String lastName, String email, String gender) {
         this.id = id;
-        this.lastname = lastname;
+        this.lastName = lastName;
         this.email = email;
         this.gender = gender;
     }
@@ -21,12 +21,12 @@ public class Employee {
         this.id = id;
     }
 
-    public String getLastname() {
-        return lastname;
+    public String getLastName() {
+        return lastName;
     }
 
-    public void setLastname(String lastname) {
-        this.lastname = lastname;
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
     }
 
     public String getEmail() {
@@ -49,7 +49,7 @@ public class Employee {
     public String toString() {
         return "Employee{" +
                 "id=" + id +
-                ", lastname='" + lastname + '\'' +
+                ", lastname='" + lastName + '\'' +
                 ", email='" + email + '\'' +
                 ", gender='" + gender + '\'' +
                 '}';
